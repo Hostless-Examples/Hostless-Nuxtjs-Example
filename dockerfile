@@ -1,6 +1,6 @@
 
 # Use official Node.js image as the base image
-FROM node:14-alpine
+FROM node:lts-alpine
 
 # Set working directory inside the container
 WORKDIR /app
@@ -20,5 +20,7 @@ RUN npm run build
 # Expose the port that the app will run on
 EXPOSE 8000
 
+ENV NITRO_PORT=8000
+
 # Start the Nuxt.js application
-CMD ["npm", "run", "dev"]
+CMD ["node", "./.output/server/index.mjs"]
