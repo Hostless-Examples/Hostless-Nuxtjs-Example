@@ -1,75 +1,24 @@
-# Nuxt 3 Minimal Starter
+# NuxtJs
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+The Intuitive Vue Framework Nuxt is an open source framework that makes web development intuitive and powerful. Create performant and production-grade full-stack web apps and websites with confidence. Check out their official documentation [here](https://nuxt.com/docs/getting-started/introduction)
 
-## Setup
+## Deploy a Nuxt App
 
-Make sure to install the dependencies:
+In this tutorial, we advice creating a Dockerfile and using Docker as the build system
 
-```bash
-# npm
-npm install
+1. Fork/Clone this [Hostless-Nuxtjs-Example](https://github.com/Hostless-Examples/Hostless-Nuxtjs-Example) repo from github
+2. Click on 'Create New App'
+3. Choose a suitable app name
+4. Choose your github account
+5. Choose the forked github repo/the cloned remote repo
+6. Choose a build system
 
-# pnpm
-pnpm install
+    1. 'Docker' - looks for a Dockerfile in the root of the project and build based on the instructions
 
-# yarn
-yarn install
+8. The PORT environment variable is set by Hostless but also ensure your Dockerfile exposes PORT 8000 
 
-# bun
-bun install
-```
+#### Sample configuration
+![sample](https://res.cloudinary.com/do58rrxug/image/upload/v1714124578/Screenshot_2024-04-26_at_10.42.42_zqnhkj.png)
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+#### Example project
+An example project is hosted on [https://hostless-nuxtjs-example.hostless.app/](https://hostless-nuxtjs-example.hostless.app/)
